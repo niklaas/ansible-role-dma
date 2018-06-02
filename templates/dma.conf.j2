@@ -1,0 +1,20 @@
+SMARTHOST {{ dma_smarthost }}
+{% if dma_port %}
+PORT {{ dma_port }}
+{% endif %}
+{% if dma_securetransfer %}
+SECURETRANSFER
+{% endif %}
+{% if dma_user or dma_password %}
+AUTHPATH /etc/dma/auth.conf
+{% endif %}
+{% if dma_starttls %}
+STARTTLS
+{% endif %}
+MAILNAME {{ ansible_nodename }}
+{% if dma_insecure %}
+INSECURE
+{% endif %}
+{% if dma_starttls %}
+MASQUERADE {{ dma_masquerade }}
+{% endif %}

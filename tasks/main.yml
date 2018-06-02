@@ -1,0 +1,30 @@
+---
+- name: install
+  apt: name=dma state=latest
+
+- name: configure
+  template:
+    src: dma.conf.j2
+    dest: /etc/dma/dma.conf
+    owner: root
+    group: mail
+    mode: "u=rw,g=r,o="
+
+- name: configure authorisation
+  template:
+    src: auth.conf.j2
+    dest: /etc/dma/auth.conf
+    owner: root
+    group: mail
+    mode: "u=rw,g=r,o="
+  when: dma_user is defined or dma_password is defined
+
+- name: set alias to forward all mail
+  template:
+    src: aliases.j2
+    dest: /etc/aliases
+    owner: root
+    group: root
+    mode: 0644
+    backup: yes
+  when: dma_alias_mail is defined
