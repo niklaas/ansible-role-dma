@@ -1,6 +1,8 @@
 DragonFly Mail Transport Agent (DMA)
 =========
 
+[![Build Status](https://travis-ci.org/niklaas/ansible-role-dma.svg?branch=master)](https://travis-ci.org/niklaas/ansible-role-dma)
+
 This role installs and configures the [DragonFly Mail Transport Agent
 (DMA)](dma) to relay mail to a smarthost. If desired, an alias can be set under
 `/etc/aliases` to forward *all* mail to the specified email address.
