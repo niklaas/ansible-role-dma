@@ -1,6 +1,8 @@
 galaxy_info:
   author: Niklaas Baudet von Gersdorff
-  description:
+  description: >
+    The role installs and configures DragonFly Mail Transport Agent (DMA).
+    Optionally, a catch-all alias can be set in `/etc/aliases`.
   company: niklaas.eu
 
   # If the issue tracker for your role is not on github, uncomment the
