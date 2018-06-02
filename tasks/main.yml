@@ -1,6 +1,6 @@
 ---
 - name: install
-  apt: name=dma state=latest
+  package: name=dma state=latest
 
 - name: configure
   template:
