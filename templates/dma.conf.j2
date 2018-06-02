@@ -15,6 +15,6 @@ MAILNAME {{ ansible_nodename }}
 {% if dma_insecure %}
 INSECURE
 {% endif %}
-{% if dma_starttls %}
+{% if dma_masquerade %}
 MASQUERADE {{ dma_masquerade }}
 {% endif %}
