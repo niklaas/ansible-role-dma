@@ -171,7 +171,7 @@ galaxy_info:
   #  - yakkety
   #  - zesty
   - name: Debian
-  #  versions:
+    versions:
   #  - all
   #  - buster
   #  - etch
