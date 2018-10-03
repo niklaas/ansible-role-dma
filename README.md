@@ -8,7 +8,8 @@ This role installs and configures the [DragonFly Mail Transport Agent
 `/etc/aliases` to forward *all* mail to the specified email address.
 
 I deploy this role to machines to receive their system mail. (See [this blog
-post](post) for a bit more background information.)
+post](https://notebook.niklaas.eu/post/2018-04-08-from-nullmailer-to-dma/) for
+a bit more background information.)
 
 [dma]: https://github.com/corecode/dma
 [post]: https://notebook.niklaas.eu/post/2018-04-08-from-nullmailer-to-dma/
