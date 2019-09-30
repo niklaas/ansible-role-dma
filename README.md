@@ -33,6 +33,7 @@ dma_masquerade | If set, the sender of all mails will be masqueraded to this ema
 dma_password | If set, this will be used to authorise at the smarthost. (default: null)
 dma_smarthost | The smarthost to relay mail to e.g., `smtp.gmail.com`. (mandatory, default: null)
 dma_user | If set, this will be used to authorise at the smarthost (default: null)
+dma_mailname | If set MAILNAME will be populated with this value (default: ansible_nodename)
 
 As well as those, `ansible_nodename` is used as the systems mailname. set
 `dma_masquerade` if the nodename is a bad fit for your needs.
