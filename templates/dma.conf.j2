@@ -13,7 +13,7 @@ AUTHPATH /etc/dma/auth.conf
 {% if dma_starttls %}
 STARTTLS
 {% endif %}
-MAILNAME {{ dma_mailname |default(ansible_nodename) }}
+MAILNAME {{ dma_mailname | default(ansible_nodename) }}
 {% if dma_insecure %}
 INSECURE
 {% endif %}
